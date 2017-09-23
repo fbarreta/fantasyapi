@@ -7,11 +7,11 @@ bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var userRoutes = require('./api/routes/userRoutes'); //importing route
-var deviceRoutes = require('./api/routes/deviceRoutes'); //importing route
+var userRoutes = require('./api/routes/userRoutes');
+var fighterRoutes = require('./api/routes/fighterRoutes');
 
 userRoutes(app);
-deviceRoutes(app);
+fighterRoutes(app);
 
 app.listen(port);
 
